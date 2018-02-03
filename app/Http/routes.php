@@ -12,5 +12,15 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth/login');
 });
+
+Route::resource('adminhistorias/historia','HistoriaController');
+Route::resource('adminhistorias/personaje','PersonajeController');
+Route::resource('adminhistorias/escena','EscenaController');
+Route::resource('adminhistorias/dialogo','DialogoController');
+Route::resource('adminhistorias/listaescenas','ListaescenasController');
+Route::resource('seguridad/usuario','UsuarioController');
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
