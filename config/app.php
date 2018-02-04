@@ -91,7 +91,7 @@ return [
     |
     */
 
-    'key' => env('my encryption key'),
+    'key' => env('base64:Yxy7RTHqI+gxP5B26eWwyTIdKXZydSrecsbJ3HvigJI='),
 
     'cipher' => 'AES-256-CBC',
 
