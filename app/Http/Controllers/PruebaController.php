@@ -18,14 +18,10 @@ class PruebaController extends Controller
     //
   	public function __construct(){
     }
-    public function index(Request $request){
-        	if($request)
-        	{
-        		$query=trim($request->get('searchText'));
-        		$historias=DB::table('historia')->where('nombre','LIKE','%'.$query.'%')
-      ->paginate(7);
-        		return view('probando.pruebabd.index',["historias"=>$historias,"searchText"=>$query]);
-        	}
+    public function index(){
+
+        		return view('probando.pruebabd.index');
+        
 
     }
       
