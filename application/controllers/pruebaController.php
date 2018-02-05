@@ -4,7 +4,7 @@
 /**
 * 
 */
-class pruebaController extends CI_Controller
+class pruebacontroller extends CI_Controller
 {
 	
 	function __construct()
@@ -14,6 +14,6 @@ class pruebaController extends CI_Controller
 	}
 	public function index(){
 
-		$this ->load->view('vistaPrueba');
+		$this ->load->view('vistaprueba');
 	}
 }
