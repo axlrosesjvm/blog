@@ -67,7 +67,7 @@
 <body>
 
 <div id="container">
-	<h1>bienvenido a la pagina administrador de historias</h1>
+	<h1>hola a codeigniter!</h1>
 
 	<div id="body">
 		<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
